@@ -27,6 +27,10 @@ body {
   overflow-x: hidden;
 }
 
+.HomeVideo {
+  border-radius: 50px;
+}
+
 .moveLink {
   opacity: 0;
   height: 0;
