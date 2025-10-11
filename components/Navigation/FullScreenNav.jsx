@@ -3,6 +3,7 @@ import Image from "next/image"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export const FullScreenNav = ({ onClose }) => {
     useEffect(() => {
@@ -108,7 +109,7 @@ export const FullScreenNav = ({ onClose }) => {
                     </svg>
                 </button>
                 <div className="lg:mt-13 mt-50 flex flex-col h-full justify-around">
-                    <div className="link cursor-pointer relative border-t-1 border-white/50">
+                    <Link href="/projects" onClick={handleClose} className="link cursor-pointer relative border-t-1 border-white/50">
                         <h1 className="font-[font2] uppercase lg:text-[8vw] text-[15vw] lg:leading-[0.8] leading-[0.6] pb-1.5 lg:pt-5 pt-4.5 text-center">Work</h1>
                         <div className="moveLink absolute flex top-0 bg-[#d3fd50] text-black">
                             <div className="moveX flex items-center">
@@ -148,8 +149,8 @@ export const FullScreenNav = ({ onClose }) => {
                                 />
                             </div>
                         </div>
-                    </div>
-                    <div className="link cursor-pointer relative border-t-1 border-white/50">
+                    </Link>
+                    <Link href="/agence" onClick={handleClose} className="link cursor-pointer relative border-t-1 border-white/50">
                         <h1 className="font-[font2] uppercase lg:text-[8vw] text-[15vw] lg:leading-[0.8] leading-[0.6] pb-1.5 lg:pt-5 pt-4.5 text-center">Agency</h1>
                         <div className="moveLink absolute flex top-0 bg-[#d3fd50] text-black">
                             <div className="moveX flex items-center">
@@ -189,7 +190,7 @@ export const FullScreenNav = ({ onClose }) => {
                                 />
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     <div className="link cursor-pointer relative border-t-1 border-white/50">
                         <h1 className="font-[font2] uppercase lg:text-[8vw] text-[15vw] lg:leading-[0.8] leading-[0.6] pb-1.5 lg:pt-5 pt-4.5 text-center">Contact</h1>
                         <div className="moveLink absolute flex top-0 bg-[#d3fd50] text-black">
